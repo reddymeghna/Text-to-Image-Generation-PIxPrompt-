@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #201d1d;
+  color: #333;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(163, 148, 148, 0.1);
+}
+
+.header .logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #0c96db;
+}
+
+.nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #9ee1ed;
+  font-size: 18px;
+}
+
+.nav a:hover {
+  color: #76cce8;
+}
+
+.main-content {
+  text-align: center;
+  padding: 50px;
+}
+
+.intro h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color:#47bbe1;
+}
+
+.intro p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #9ee1ed;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-try,
+.btn-learn {
+  padding: 12px 30px;
+  margin: 5px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-try {
+  background-color: #47bbe1;
+  color: rgb(8, 14, 132);
+}
+
+.btn-try:hover {
+  background-color: #f1e7e7;
+}
+
+.btn-learn {
+  background-color: #f1f1f1;
+  color: #000;
+}
+
+.btn-learn:hover {
+  background-color: #ddd;
+}
