@@ -1,20 +1,17 @@
-import React from 'react';
-import Navbar from './Navbar'; // Reuse the Navbar component
-import './About.css'; // Include styles for the About page if needed
-
-function About() {
+import { motion } from 'framer-motion';
+import './About.css';
+function AboutUs() {
   return (
-    <div className="about-page">
-      <Navbar />
-      <main className="content">
-        <h1>About Us</h1>
-        <p>
-          Welcome to PixPrompt! We are a team dedicated to creating innovative tools that bridge the gap between imagination and reality. 
-          Our text-to-image generation tool uses advanced GAN models to bring your ideas to life.
-        </p>
-      </main>
-    </div>
+    <motion.div
+      initial={{ opacity: 0, y: 50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+      className="about-us"
+    >
+      <h1>About Us</h1>
+      <p>Welcome to PixPrompt, where innovation meets creativity!</p>
+      <img src="/path-to-image.jpg" alt="Team" className="about-image" />
+    </motion.div>
   );
 }
-
-export default About;
+export default AboutUs;
