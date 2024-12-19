@@ -1,0 +1,15 @@
+.home-page {
+    width: 100%;
+    max-width: 1200px; /* Optional: Add a max-width for better layout control */
+    margin: 0 auto;    /* Center the page horizontally */
+  }
+  
+  .header {
+    width: 100%;
+  }
+  
+  .main-content {
+    width: 100%;
+    padding: 50px 20px; /* Add horizontal padding for responsiveness */
+  }
+  

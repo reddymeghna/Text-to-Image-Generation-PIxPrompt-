@@ -1,0 +1,24 @@
+/* Shared styles for About and Overview pages */
+
+.content {
+    padding: 50px;
+    text-align: center;
+    color: #fff;
+    background-color: #000; /* Black background */
+    min-height: 100vh; /* Ensure it covers the full viewport height */
+  }
+  
+  .content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #2a8bbb; /* Blue heading color */
+  }
+  
+  .content p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+    color: #ddd; /* Light gray text */
+  }
+  
