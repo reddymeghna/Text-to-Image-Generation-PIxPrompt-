@@ -1,0 +1,26 @@
+/* Specific styles for Overview */
+.overview {
+    padding: 50px;
+    text-align: center;
+    color: #9ee1ed;
+  }
+  
+  .overview h1 {
+    font-size: 36px;
+    color: #47bbe1;
+    margin-bottom: 20px;
+  }
+  
+  .overview p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .overview img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+  }
+  
