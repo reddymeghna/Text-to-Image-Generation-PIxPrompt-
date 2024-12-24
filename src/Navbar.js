@@ -1,11 +1,16 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './Navbar.css'; // Include styles specific to the Navbar if needed
 
 function Navbar() {
+  const navigate = useNavigate();
+
   return (
     <nav className="navbar">
-      <div className="logo">PixPrompt</div>
+      {/* Clickable logo redirects to the home page */}
+      <div className="logo" onClick={() => navigate('/')} style={{ cursor: 'pointer' }}>
+        PixPrompt
+      </div>
       <div className="nav-links">
         <Link to="/about" className="nav-link">
           About Us

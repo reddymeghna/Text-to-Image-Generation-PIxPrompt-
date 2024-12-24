@@ -1,24 +1,44 @@
-/* Shared styles for About and Overview pages */
-
 .content {
-    padding: 50px;
-    text-align: center;
-    color: #fff;
-    background-color: #000; /* Black background */
-    min-height: 100vh; /* Ensure it covers the full viewport height */
-  }
-  
-  .content h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
-    color: #2a8bbb; /* Blue heading color */
-  }
-  
-  .content p {
-    font-size: 18px;
-    max-width: 600px;
-    margin: 0 auto;
-    line-height: 1.6;
-    color: #ddd; /* Light gray text */
-  }
-  
+  padding: 50px;
+  text-align: center;
+  color: #fff;
+  background-color: #15151c; /* Black background for a sleek look */
+  min-height: 100vh;
+}
+
+.content h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #47bbe1; /* Blue heading */
+}
+
+.content h2 {
+  font-size: 28px;
+  margin-top: 40px;
+  color: #d5eaf1; /* Light blue subheading */
+}
+
+.content p {
+  font-size: 18px;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+  color: #ddd; /* Light gray text */
+}
+
+.content ul {
+  text-align: left;
+  max-width: 800px;
+  margin: 20px auto;
+  padding-left: 20px;
+  color: #ddd;
+}
+
+.content ul li {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.content b {
+  color: #e2e8eb; /* Highlighted text */
+}
