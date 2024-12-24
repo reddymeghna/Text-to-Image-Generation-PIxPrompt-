@@ -1,15 +1,124 @@
 .home-page {
-    width: 100%;
-    max-width: 1200px; /* Optional: Add a max-width for better layout control */
-    margin: 0 auto;    /* Center the page horizontally */
-  }
-  
-  .header {
-    width: 100%;
-  }
-  
-  .main-content {
-    width: 100%;
-    padding: 50px 20px; /* Add horizontal padding for responsiveness */
-  }
-  
+  width: 100%;
+  max-width: 1200px; /* Maximum width for layout control */
+  margin: 0 auto;    /* Center the page horizontally */
+  font-family: Arial, sans-serif; /* Optional: Set a clean font */
+  color: #333; /* Set a default text color */
+}
+
+.header {
+  width: 100%;
+}
+
+.main-content {
+  width: 100%;
+  padding: 50px 20px; /* Add horizontal padding for responsiveness */
+  text-align: center; /* Center align the content */
+}
+
+.intro h1 {
+  font-size: 2.5rem;
+  color: #007BFF; /* Highlighted title color */
+}
+
+.intro p {
+  font-size: 1.2rem;
+  margin: 10px 0 30px;
+  color: #555;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Space between buttons */
+}
+
+.btn-try,
+.btn-learn {
+  padding: 12px 24px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #007BFF;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-try:hover,
+.btn-learn:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #fff;
+  width: 90%;
+  max-width: 500px;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  text-align: left;
+  position: relative;
+}
+
+.modal-content h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #007BFF;
+}
+
+.modal-content p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.modal-content ul {
+  margin: 15px 0;
+  padding-left: 20px;
+}
+
+.modal-content ul li {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.workflow-image {
+  width: 100%;
+  max-width: 400px;
+  margin: 20px auto;
+  display: block;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  color: #333;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.btn-close:hover {
+  color: #007BFF;
+}

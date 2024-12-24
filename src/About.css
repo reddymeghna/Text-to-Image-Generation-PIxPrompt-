@@ -30,20 +30,26 @@ ul {
   margin-top: 20px;
   list-style: none;
   padding: 0;
+  
 }
+
+
 
 ul li {
   margin: 10px 0;
   cursor: pointer;
   font-size: 18px;
-  color: #76cce8;
+  color: #afe46f; /* Change pretext color to white */
   transition: transform 0.3s, color 0.3s;
 }
 
 ul li:hover {
-  color: #fff;
+  color: #47bbe1; /* Highlight link text on hover */
   transform: scale(1.05);
 }
+
+
+
 
 .learn-more-btn {
   padding: 12px 20px;
@@ -97,7 +103,7 @@ ul li:hover {
 }
 
 .close-btn:hover {
-  background-color: #d22;
+  background-color: rgb(153, 218, 100);
 }
 
 @keyframes fadeIn {
