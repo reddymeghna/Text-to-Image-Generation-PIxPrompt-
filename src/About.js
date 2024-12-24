@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React, { useState } from 'react';
 import Navbar from './Navbar'; // Reuse Navbar component
 import './About.css'; // Custom styles for the About page
@@ -45,22 +44,7 @@ function About() {
         )}
       </main>
     </div>
-=======
-import { motion } from 'framer-motion';
-import './About.css';
-function AboutUs() {
-  return (
-    <motion.div
-      initial={{ opacity: 0, y: 50 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5 }}
-      className="about-us"
-    >
-      <h1>About Us</h1>
-      <p>Welcome to PixPrompt, where innovation meets creativity!</p>
-      <img src="/path-to-image.jpg" alt="Team" className="about-image" />
-    </motion.div>
->>>>>>> fc04ec2337edf646b12c1772d3fd54be36a6f280
   );
 }
-export default AboutUs;
+
+export default About;
