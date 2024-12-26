@@ -1,26 +1,37 @@
-import React, { useState, useRef } from 'react';
-import './DynamicPage.css'; // Ensure this CSS file exists
+import React, { useState, useRef } from 'react'; // Correctly importing hooks
+import { useNavigate } from 'react-router-dom'; // Correctly importing navigation
+import './DynamicPage.css'; // Importing CSS
 
 function DynamicPage() {
   const [submitted, setSubmitted] = useState(false);
   const [inputValue, setInputValue] = useState('');
   const [displayedPrompt, setDisplayedPrompt] = useState('');
   const contentRef = useRef(null);
+  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
     if (inputValue.trim()) {
-      setSubmitted(false); // Reset the state to hide the previous content
-      setDisplayedPrompt(inputValue); // Set the current prompt
+      setSubmitted(false);
+      setDisplayedPrompt(inputValue);
       setTimeout(() => {
-        setSubmitted(true); // Trigger re-render for new content
+        setSubmitted(true);
         contentRef.current?.scrollIntoView({ behavior: 'smooth' });
-      }, 100); // Ensure unmounting before remounting
+      }, 100);
     }
+  };
+
+  const navigateToHome = () => {
+    navigate('/');
   };
 
   return (
     <div className="page-container">
+      {/* Top heading with navigation */}
+      <div className="top-heading">
+        <h1 onClick={navigateToHome}>PixPrompt</h1>
+      </div>
+
       <div className="input-section">
         <h1>Text-to-Image Synthesis</h1>
         <form onSubmit={handleSubmit}>
@@ -37,7 +48,7 @@ function DynamicPage() {
 
       {submitted && (
         <div className="content-section" ref={contentRef}>
-          <h2 style={{ color: '#e14747', marginBottom: '20px' }}>
+          <h2>
             Images Generated for: "{displayedPrompt}" by GAN models
           </h2>
           <div className="image-row">

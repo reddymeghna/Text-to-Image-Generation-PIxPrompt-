@@ -1,12 +1,30 @@
+/* General page container styling */
 .page-container {
   padding: 20px;
   background-color: #15151c;
   min-height: 100vh;
 }
 
+/* Styling for the top heading (PixPrompt) */
+.top-heading {
+  padding: 10px;
+  text-align: left;
+   /* Align text to the left */
+   background-color: #f0f0f5
+}
+
+.top-heading h1 {
+  cursor: pointer;
+  margin: 0;
+  font-size: 24px;
+  color: #47bbe1; /* Blue color */
+  background: none; /* Remove background color */
+}
+
+/* Input section styling */
 .input-section {
   text-align: center;
-  margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 .input-section h1 {
@@ -37,11 +55,18 @@
   background-color: #76cce8;
 }
 
+/* Content section styling */
 .content-section {
   margin-top: 30px;
   text-align: center;
 }
 
+.content-section h2 {
+  color: #e14747;
+  margin-bottom: 20px;
+}
+
+/* Image row styling */
 .image-row {
   display: flex;
   justify-content: center;
