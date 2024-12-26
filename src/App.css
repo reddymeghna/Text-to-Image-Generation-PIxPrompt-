@@ -93,3 +93,35 @@ body {
 .btn-learn:hover {
   background-color: #ddd;
 }
+/* White background for the section */
+.white-background {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Animation for the text */
+.animated-message {
+  animation: fadeInUp 0.6s ease-in-out;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 15px;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+
+/* Keyframes for fade-in-up animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
