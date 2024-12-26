@@ -1,93 +1,156 @@
 /* General page container styling */
 .page-container {
-  padding: 20px;
-  background-color: #15151c;
-  min-height: 100vh;
-}
+    padding: 20px;
+    background-color: #15151c;
+    min-height: 100vh;
+  }
+  
+  /* Styling for the top heading (PixPrompt) */
+  .top-heading {
+    padding: 10px;
+    text-align: left;
+     /* Align text to the left */
+     background-color: #f0f0f5
+  }
+  
+  .top-heading h1 {
+    cursor: pointer;
+    margin: 0;
+    font-size: 24px;
+    color: #47bbe1; /* Blue color */
+    background: none; /* Remove background color */
+  }
+  
+  /* Input section styling */
+  .input-section {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .input-section h1 {
+    color: #47bbe1;
+    margin-bottom: 20px;
+  }
+  
+  .input-section input {
+    padding: 10px;
+    font-size: 16px;
+    width: 300px;
+    margin-right: 10px;
+    border: 2px solid #47bbe1;
+    border-radius: 5px;
+  }
+  
+  .input-section button {
+    padding: 10px 20px;
+    background-color: #47a1e1;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .input-section button:hover {
+    background-color: #76cce8;
+  }
+  
+  /* Content section styling */
+  .content-section {
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  .content-section h2 {
+    color: #e14747;
+    margin-bottom: 20px;
+  }
+  
+  /* Image row styling */
+  .image-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between images */
+    flex-wrap: wrap; /* Wrap images on smaller screens */
+  }
+  
+  .image-block {
+    text-align: center;
+  }
+  
+  .image {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .image-description {
+    margin-top: 10px;
+    color: #47bbe1;
+    font-size: 14px;
+    font-weight: bold;
+  }
 
-/* Styling for the top heading (PixPrompt) */
-.top-heading {
-  padding: 10px;
-  text-align: left;
-   /* Align text to the left */
-   background-color: #f0f0f5
-}
+  /* Metrics section styling */
+  .metrics-section {
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  .metrics-section h3 {
+    color: #47bbe1;
+    margin-bottom: 20px;
+  }
+  
+  .metrics-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .metric-block {
+    background-color: #1e1e26;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    width: 200px;
+  }
+  
+  .metric-block h4 {
+    color: #e14747;
+    margin-bottom: 10px;
+  }
+  
+  .metric-block p {
+    margin: 5px 0;
+  }
 
-.top-heading h1 {
-  cursor: pointer;
-  margin: 0;
-  font-size: 24px;
-  color: #47bbe1; /* Blue color */
-  background: none; /* Remove background color */
-}
-
-/* Input section styling */
-.input-section {
-  text-align: center;
-  margin-top: 30px;
-}
-
-.input-section h1 {
-  color: #47bbe1;
-  margin-bottom: 20px;
-}
-
-.input-section input {
-  padding: 10px;
-  font-size: 16px;
-  width: 300px;
-  margin-right: 10px;
-  border: 2px solid #47bbe1;
-  border-radius: 5px;
-}
-
-.input-section button {
-  padding: 10px 20px;
-  background-color: #47a1e1;
-  color: white;
-  font-size: 16px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.input-section button:hover {
-  background-color: #76cce8;
-}
-
-/* Content section styling */
-.content-section {
-  margin-top: 30px;
-  text-align: center;
-}
-
-.content-section h2 {
-  color: #e14747;
-  margin-bottom: 20px;
-}
-
-/* Image row styling */
-.image-row {
-  display: flex;
-  justify-content: center;
-  gap: 20px; /* Space between images */
-  flex-wrap: wrap; /* Wrap images on smaller screens */
-}
-
-.image-block {
-  text-align: center;
-}
-
-.image {
-  width: 300px;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
-}
-
-.image-description {
-  margin-top: 10px;
-  color: #47bbe1;
-  font-size: 14px;
-  font-weight: bold;
-}
+  /* Metrics toggle button styling */
+.metrics-toggle {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .metrics-toggle button {
+    padding: 10px 20px;
+    background-color: #47a1e1;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .metrics-toggle button:hover {
+    background-color: #66b556;
+  }
+  .comparative-heading {
+    margin-top: 30px;
+    color: #76b545;
+    font-size: 20px;
+    text-align: center;
+  }
