@@ -6,27 +6,35 @@ function About() {
   const [selectedGAN, setSelectedGAN] = useState(null);
 
   const ganDetails = {
-    StackGAN: {
-      brief: "StackGAN generates images in two stages for better quality and detail.",
-      detailed: `StackGAN (Stacked Generative Adversarial Networks) is a GAN architecture designed to generate high-quality images from text descriptions. 
-      It operates in two stages: 
-      1. **Stage-I GAN** generates a low-resolution image with basic shapes and colors based on the text description.  
-      2. **Stage-II GAN** refines the image by adding details and improving the resolution while preserving consistency with the text. 
-      This approach divides the complex task of generating detailed images into smaller, more manageable steps.`,
+    GAN: {
+      brief: "GANs generate realistic data by training two networks in a competitive setup.",
+      detailed: `GAN (Generative Adversarial Network) is a framework for generating synthetic data that resembles real-world data.  
+      It consists of two neural networks:  
+      1. **Generator**: Creates fake data (e.g., images) based on random input.  
+      2. **Discriminator**: Distinguishes between real and fake data, providing feedback to the generator.  
+    
+      These networks are trained in an adversarial manner, where the generator improves to create more realistic data, and the discriminator enhances its ability to detect fakes.  
+      GANs have revolutionized areas like image synthesis, style transfer, and text-to-image generation by producing highly realistic outputs.`,
     },
+    
     DF_GAN: {
       brief: "DF-GAN simplifies text-to-image generation with a deep fusion block.",
       detailed: `DF-GAN (Deep Fusion GAN) is another text-to-image synthesis framework that uses a simpler, end-to-end architecture compared to StackGAN. 
       It introduces a **Deep Text-Image Fusion Block** to directly fuse text embeddings and image features, enabling more effective and consistent image generation. 
       DF-GAN eliminates the need for multi-stage generation and focuses on improving the efficiency and quality of text-conditioned image synthesis.`,
     },
-    AttentionGAN: {
-      brief: "Attention GAN uses attention mechanisms for detailed text-image alignment.",
-      detailed: `Attention GANs incorporate attention mechanisms to improve the alignment between the input conditions (e.g., text or image regions) and the generated output. 
-      In text-to-image synthesis, attention GANs dynamically focus on relevant parts of the text during different stages of image generation. 
-      By leveraging attention, these GANs enhance the consistency and detail of generated images, particularly in capturing complex or localized features. 
-      Models like AttnGAN are examples that use attention mechanisms to align text and visual content effectively.`,
+    StableDiffusion: {
+      brief: "Stable Diffusion generates highly detailed images from text prompts efficiently.",
+      detailed: `Stable Diffusion is an advanced text-to-image model developed by Stability AI.  
+      It uses a diffusion-based generative process, where noise is iteratively reduced to form high-quality images based on the input text.  
+      Key features include:  
+      1. **Text-to-Image Transformation**: Generates images aligned with natural language descriptions.  
+      2. **Versatility**: Capable of creating diverse visual styles, ranging from photorealistic to abstract art.  
+      3. **Efficiency**: Designed for high performance on consumer-grade GPUs, enabling widespread accessibility.  
+    
+      Stable Diffusion 2 builds on the success of earlier versions with improved architecture, yielding even more detailed and coherent outputs.`,
     },
+    
   };
 
   const toggleModal = (ganName) => {
@@ -42,7 +50,7 @@ function About() {
           <b>PixPrompt</b> is a platform designed to bring textual descriptions to life through advanced GAN models. Our focus is on innovation, research, and creating tools that empower users to generate stunning visuals from text.
         </p>
         <p>
-          We use three advanced GAN models to achieve this goal:
+          We use three powerful GAN models to achieve this goal:
         </p>
         <ul>
           {Object.entries(ganDetails).map(([ganName, details]) => (
