@@ -95,13 +95,23 @@ body{
 .btn-learn:hover {
   background-color: #ddd;
 }
-/* White background for the section */
-.white-background {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 8px;
-  margin-top: 20px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+.message-content-white-background{
+  display: block; /* Centers the image inside the container */
+  max-width: 50%; /* Prevents the image from overflowing */
+  height: auto; /* Maintains the aspect ratio */
+  margin: 10px auto; /* Centers the image vertically and horizontally */
+  border-radius: 8px; /* Adds rounded corners for aesthetics */
+  background-color: #a2e3db;
+}
+
+.message-content-white-background .animated-message-text {
+  animation: fadeInUp 0.6s ease-in-out;
+  /* font-size: 1.5rem;  */
+  /* line-height: 1.8;  */
+  color: #0d3db8; /* Updated to bright orange */
+  background-color: #a2e3db;
+  margin-bottom: 15px;
+  font-family: 'Poppins', sans-serif;
 }
 
 /* Animation for the text */
@@ -113,9 +123,6 @@ body{
   margin-bottom: 15px;
   font-family: 'Poppins', sans-serif;
 }
-
-
-
 /* Keyframes for fade-in-up animation */
 @keyframes fadeInUp {
   from {
