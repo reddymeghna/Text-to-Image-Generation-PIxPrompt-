@@ -5,7 +5,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(165, 67, 67, 0.5);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -14,7 +14,7 @@
   
   /* Popup content */
   .popup-content {
-    background: black;
+    background: rgb(149, 72, 155);
     border-radius: 12px;
     padding: 20px;
     width: 90%;
@@ -40,8 +40,8 @@
     font-size: 1.1rem;
     line-height: 1.6;
     color: #555;
-    font-style: italic;
-    background: linear-gradient(90deg, #47bbe1, #47bbe1);
+    /* font-style: italic; */
+    background: linear-gradient(90deg, #a2e3db, #a2e3db);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     padding: 10px;
@@ -64,10 +64,12 @@
     animation: fadeInUp 0.6s ease-in-out;
     font-size: 1.5rem; /* Increased font size */
     line-height: 1.8; /* Improved line spacing */
-    color: #0a223a; /* Dark blue for the paragraph */
+    color: #161819; /* Dark blue for the paragraph */
     margin-bottom: 15px;
     font-family: 'Poppins', sans-serif;
   }
+  
+
   
   /* Fade-in animation */
   @keyframes fadeIn {

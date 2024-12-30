@@ -3,7 +3,8 @@ import { useNavigate } from 'react-router-dom';
 import Navbar from './Navbar';
 import './App.css'; // Include your existing styles
 import './Popup.css'; // Include animation styles
-import sampleImage from './images/back2.jpg';
+import sampleImage from './images/back3.png';
+
 
 function HomePage() {
   const navigate = useNavigate();
@@ -35,7 +36,7 @@ function HomePage() {
             </button>
           </div>
           {isMessageVisible && (
-            <div className="message-content white-background">
+            <div className="message-content-white-background">
               <h2 className="animated-message">Hello! I am PixPrompt</h2>
               <p className="animated-message-text">
                 I am your creative companion! Powered by advanced GAN models, I can transform your
