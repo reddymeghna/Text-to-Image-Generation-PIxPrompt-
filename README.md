@@ -9,7 +9,7 @@ This project is an end-to-end **Text-to-Image generation chatbot** that generate
 
 ## 🚀 Project Highlights
 
-- 🔁 **Preprocessing COCO dataset** for training
+- 🔁 **Preprocessing FLICKR 8K dataset** for training
 - 🧠 **Custom-trained DF-GAN** using PyTorch & CNNs
 - 🤖 **Flask middleware chatbot** to input prompts & serve results
 - 🔍 **Compare outputs**: Hugging Face API vs Trained Model
@@ -22,8 +22,8 @@ This project is an end-to-end **Text-to-Image generation chatbot** that generate
 | Layer        | Tools/Frameworks                                     |
 |--------------|------------------------------------------------------|
 | Language     | Python 3.10                                          |
-| Model        | DF-GAN (Generator + Discriminator), CNN                |
-| Dataset      | COCO (captions + images), tokenized & cleaned        |
+| Model        | DF-GAN (Generator + Discriminator), CNN              |
+| Dataset      | FLICKR 8K (captions + images), tokenized & cleaned   |
 | Libraries    | PyTorch, torchvision, matplotlib, PIL, Flask         |
 | Inference    | Hugging Face `CompVis/stable-diffusion-v1-4`         |
 | Frontend     | Simple HTML + JS or Postman (API testing)            |
