@@ -22,7 +22,7 @@ This project is an end-to-end **Text-to-Image generation chatbot** that generate
 | Layer        | Tools/Frameworks                                     |
 |--------------|------------------------------------------------------|
 | Language     | Python 3.10                                          |
-| Model        | DF-GAN (Generator + Discriminator), CNN              |
+| Model        | Flux model and DF-GAN(Generator + Discriminator), CNN|
 | Dataset      | FLICKR 8K (captions + images), tokenized & cleaned   |
 | Libraries    | PyTorch, torchvision, matplotlib, PIL, Flask         |
 | Inference    | Hugging Face `CompVis/stable-diffusion-v1-4`         |
