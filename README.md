@@ -1,9 +1,9 @@
-# 🧠 Text-to-Image Generation Chatbot using GANs & LLMs
+# 🧠 Text-to-Image Generation Chatbot using GANs & Huggin face transformers
 
 This project is an end-to-end **Text-to-Image generation chatbot** that generates realistic images from natural language prompts using two pipelines:
 
 1. ✅ **Fine-tuned GAN-based model** (trained on preprocessed COCO dataset)
-2. ✅ **Hugging Face inference API** (baseline benchmark)
+2. ✅ **Used DF-GAN for image generation** (baseline benchmark)
 
 ---
 
