@@ -10,7 +10,7 @@ This project is an end-to-end **Text-to-Image generation chatbot** that generate
 ## 🚀 Project Highlights
 
 - 🔁 **Preprocessing COCO dataset** for training
-- 🧠 **Custom-trained Conditional GAN (cGAN)** using PyTorch & CNNs
+- 🧠 **Custom-trained DF-GAN** using PyTorch & CNNs
 - 🤖 **Flask middleware chatbot** to input prompts & serve results
 - 🔍 **Compare outputs**: Hugging Face API vs Trained Model
 - 🧪 Display **training parameters, loss metrics, and sample generations**
@@ -22,7 +22,7 @@ This project is an end-to-end **Text-to-Image generation chatbot** that generate
 | Layer        | Tools/Frameworks                                     |
 |--------------|------------------------------------------------------|
 | Language     | Python 3.10                                          |
-| Model        | GAN (Generator + Discriminator), CNN                |
+| Model        | DF-GAN (Generator + Discriminator), CNN                |
 | Dataset      | COCO (captions + images), tokenized & cleaned        |
 | Libraries    | PyTorch, torchvision, matplotlib, PIL, Flask         |
 | Inference    | Hugging Face `CompVis/stable-diffusion-v1-4`         |
@@ -44,7 +44,7 @@ This project is an end-to-end **Text-to-Image generation chatbot** that generate
 
 ## 🎓 Training Details
 
-**Model:** Conditional GAN (cGAN)  
+**Model:** DF-GAN
 **Training Time:** ~5 hours (NVIDIA RTX 3060)  
 **Epochs:** 100  
 **Loss Function:** Binary Cross-Entropy  
@@ -61,7 +61,13 @@ This project is an end-to-end **Text-to-Image generation chatbot** that generate
 ---
 
 
+The Architecture Diagram is:
+![Screenshot (187)](https://github.com/user-attachments/assets/ccd88176-c738-410e-b168-187b6e76f1de)
+
+
+Generated Image from given text from three models(general model, by df-gan, by external api)
+![Screenshot (186)](https://github.com/user-attachments/assets/52c9efe0-40e4-40b0-8c43-55723e7fd9d8)
 
 
 
-
+![Screenshot (159)](https://github.com/user-attachments/assets/859ca7da-61d7-4cbd-9a84-af70e8d24f94)
