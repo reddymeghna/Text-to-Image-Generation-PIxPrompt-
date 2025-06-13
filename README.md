@@ -1,4 +1,4 @@
-# 🧠 Text-to-Image Generation Chatbot using GANs & Huggin face transformers
+# 🧠 Text-to-Image Generation Chatbot using GANs & Hugging face transformers
 
 This project is an end-to-end **Text-to-Image generation chatbot** that generates realistic images from natural language prompts using two pipelines:
 
@@ -6,6 +6,13 @@ This project is an end-to-end **Text-to-Image generation chatbot** that generate
 2. ✅ **Used DF-GAN for image generation** (baseline benchmark)
 
 ---
+
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Built%20With-Flask-blue?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/LLM-Groq%20LLaMA3-orange?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Hosted%20on-Vercel-black?style=for-the-badge" />
+</p>
 
 ## 🚀 Project Highlights
 
