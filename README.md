@@ -10,8 +10,8 @@ This project is an end-to-end **Text-to-Image generation chatbot** that generate
 
 <p align="center">
   <img src="https://img.shields.io/badge/Built%20With-Flask-blue?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/LLM-Groq%20LLaMA3-orange?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Hosted%20on-Vercel-black?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/GAN-df-gan%20FastAPI-orange?style=for-the-badge" />
+  
 </p>
 
 ## 🚀 Project Highlights
