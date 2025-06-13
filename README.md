@@ -67,11 +67,13 @@ This project is an end-to-end **Text-to-Image generation chatbot** that generate
 ---
 
 
-The Architecture Diagram is:
+## The Architecture Diagram is:
+
 ![Screenshot (187)](https://github.com/user-attachments/assets/ccd88176-c738-410e-b168-187b6e76f1de)
 
 
-Generated Image from given text from three models(general model, by df-gan, by external api)
+## Generated Image from given text from three models(general model, by df-gan, by external api)
+
 ![Screenshot (186)](https://github.com/user-attachments/assets/52c9efe0-40e4-40b0-8c43-55723e7fd9d8)
 
 
